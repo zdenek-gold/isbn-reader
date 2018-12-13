@@ -1,4 +1,4 @@
-package org.zigi.tool.isbnreader.model;
+package org.zigi.tool.isbnreader.api.google.model;
 
 public class Identifier {
 	private String type;
