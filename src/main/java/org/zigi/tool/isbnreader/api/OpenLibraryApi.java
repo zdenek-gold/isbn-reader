@@ -41,7 +41,6 @@ public class OpenLibraryApi implements IBookApi {
 			String firstReplacement = "{\"ISBN:\"" + isbn + "\": ";
 			res = res.substring(firstReplacement.length() - 1);
 			res = res.substring(0, res.length() - 1);
-			LOG.info(res);
 			Gson gson = new GsonBuilder().create();
 			Book instance = gson.fromJson(res, Book.class);
 

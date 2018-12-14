@@ -27,7 +27,7 @@ public class GoogleApi implements IBookApi {
 	@Override
 	public List<IBook> find(String isbn) throws MissingApiKeyException {
 
-		String apiKey = Util.property("api_key");
+		String apiKey = Util.property("google_api");
 		if (apiKey == null || apiKey.isEmpty())
 			throw new MissingApiKeyException();
 
